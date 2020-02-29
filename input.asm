@@ -5,7 +5,7 @@ data segment use16
 buf  DB 50
      DB ?
      DB 50 dup(0)
-MSG  DB 'Hello, MASM, this is ','$' 
+MSG  DB 'Hello, MASM, this is ' ,  '$' 
 CRLF DB 0DH, 0AH, '$'
 data ends
 
