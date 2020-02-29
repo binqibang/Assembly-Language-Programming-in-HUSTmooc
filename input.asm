@@ -20,15 +20,15 @@ begin:
 	mov ds, ax
 	lea dx, buf
 	mov ah, 10
-	int 21h			    ;输入字符串
+	int 21h			;输入字符串
 	
 	lea dx, CRLF
 	mov ah, 9
-	int 21h			    ;输出换行回车
+	int 21h			;输出换行回车
 
 	lea dx, MSG
 	mov ah, 9
-	int 21h			    ;输出前缀
+	int 21h			;输出前缀
 
 	mov bl, buf + 1		;buf+1为字节数据
 	mov bh, 0		
